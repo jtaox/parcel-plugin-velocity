@@ -1,0 +1,16 @@
+{
+  "name": "parcel-plugin-vm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "parcel-bundler": "^1.6.2",
+    "posthtml-render": "^1.1.1",
+    "velocityjs": "^1.0.1"
+  }
+}
