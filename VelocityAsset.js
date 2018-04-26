@@ -13,7 +13,7 @@ module.exports = class VMAsset extends HTMLAsset {
       return super.parse(this.getVelocityParseResult(code));
     }
     getVelocityParseResult(code) {
-      let json = fs.readFileSync("velocity.json", 'utf-8');
+      let json = fs.readFileSync( this.options.rootDir + "/velocity.json", 'utf-8');
       if (json) {
         const context = JSON.parse(json);
         return new Compile(Velocity.parse(code)).render(context);
